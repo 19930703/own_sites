@@ -14,9 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+//        setupGlobalAppearance()
         return true
     }
 
+    func setupGlobalAppearance(){
+           
+       //global Appearance settings
+        let customFont = UIFont.appRegularFontWith(size: 17)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: customFont], for: .normal)
+        UITextField.appearance().substituteFontName = regularFont
+        UILabel.appearance().substituteFontName = regularFont
+        UILabel.appearance().substituteFontNameBold = boldFont
+           
+     }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

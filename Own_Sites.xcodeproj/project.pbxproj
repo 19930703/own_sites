@@ -15,6 +15,12 @@
 		A94B810925E8D88A0053BC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94B810725E8D88A0053BC1D /* LaunchScreen.storyboard */; };
 		A94B811425E8D88A0053BC1D /* Own_SitesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B811325E8D88A0053BC1D /* Own_SitesTests.swift */; };
 		A94B811F25E8D88B0053BC1D /* Own_SitesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B811E25E8D88B0053BC1D /* Own_SitesUITests.swift */; };
+		A94B814425E8F5A90053BC1D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B814325E8F5A90053BC1D /* LoginViewController.swift */; };
+		A94B816025E9009E0053BC1D /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A94B815F25E9009E0053BC1D /* SFUIText-Regular.ttf */; };
+		A94B816525E900A70053BC1D /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A94B816425E900A70053BC1D /* SFUIText-Medium.ttf */; };
+		A94B816925E903790053BC1D /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A94B815E25E900930053BC1D /* SFUIText-Bold.ttf */; };
+		A94B817825E906DF0053BC1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B817725E906DF0053BC1D /* Constants.swift */; };
+		A94B817D25E907C00053BC1D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B817C25E907C00053BC1D /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		A94B811A25E8D88B0053BC1D /* Own_SitesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Own_SitesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94B811E25E8D88B0053BC1D /* Own_SitesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Own_SitesUITests.swift; sourceTree = "<group>"; };
 		A94B812025E8D88B0053BC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94B814325E8F5A90053BC1D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A94B815E25E900930053BC1D /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
+		A94B815F25E9009E0053BC1D /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		A94B816425E900A70053BC1D /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		A94B817725E906DF0053BC1D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A94B817C25E907C00053BC1D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +112,14 @@
 		A94B80FB25E8D8880053BC1D /* Own_Sites */ = {
 			isa = PBXGroup;
 			children = (
+				A94B817025E904790053BC1D /* Extensions */,
+				A94B815D25E900770053BC1D /* Resources */,
 				A94B813225E8D8C70053BC1D /* Model */,
 				A94B813325E8D8D10053BC1D /* View */,
 				A94B813425E8D8E40053BC1D /* ViewModel */,
 				A94B813525E8D8F00053BC1D /* Controller */,
 				A94B810525E8D88A0053BC1D /* Assets.xcassets */,
+				A94B817725E906DF0053BC1D /* Constants.swift */,
 			);
 			path = Own_Sites;
 			sourceTree = "<group>";
@@ -154,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				A94B810025E8D8880053BC1D /* ViewController.swift */,
+				A94B814325E8F5A90053BC1D /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +182,24 @@
 				A94B80FE25E8D8880053BC1D /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A94B815D25E900770053BC1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A94B815E25E900930053BC1D /* SFUIText-Bold.ttf */,
+				A94B816425E900A70053BC1D /* SFUIText-Medium.ttf */,
+				A94B815F25E9009E0053BC1D /* SFUIText-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A94B817025E904790053BC1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A94B817C25E907C00053BC1D /* Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +305,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94B816925E903790053BC1D /* SFUIText-Bold.ttf in Resources */,
 				A94B810925E8D88A0053BC1D /* LaunchScreen.storyboard in Resources */,
 				A94B810625E8D88A0053BC1D /* Assets.xcassets in Resources */,
 				A94B810425E8D8880053BC1D /* Main.storyboard in Resources */,
+				A94B816025E9009E0053BC1D /* SFUIText-Regular.ttf in Resources */,
+				A94B816525E900A70053BC1D /* SFUIText-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94B814425E8F5A90053BC1D /* LoginViewController.swift in Sources */,
 				A94B810125E8D8880053BC1D /* ViewController.swift in Sources */,
+				A94B817D25E907C00053BC1D /* Extension.swift in Sources */,
 				A94B80FD25E8D8880053BC1D /* AppDelegate.swift in Sources */,
 				A94B80FF25E8D8880053BC1D /* SceneDelegate.swift in Sources */,
+				A94B817825E906DF0053BC1D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,14 +518,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Vijay.Own-Sites";
+				PRODUCT_BUNDLE_IDENTIFIER = ownsites;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -496,14 +537,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Vijay.Own-Sites";
+				PRODUCT_BUNDLE_IDENTIFIER = ownsites;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
