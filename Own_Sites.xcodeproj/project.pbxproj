@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				A94B80FB25E8D8880053BC1D /* Own_Sites */,
+				A94B813625E8DA3C0053BC1D /* Supporting Files */,
 				A94B811225E8D88A0053BC1D /* Own_SitesTests */,
 				A94B811D25E8D88B0053BC1D /* Own_SitesUITests */,
 				A94B80FA25E8D8880053BC1D /* Products */,
@@ -99,13 +100,11 @@
 		A94B80FB25E8D8880053BC1D /* Own_Sites */ = {
 			isa = PBXGroup;
 			children = (
-				A94B80FC25E8D8880053BC1D /* AppDelegate.swift */,
-				A94B80FE25E8D8880053BC1D /* SceneDelegate.swift */,
-				A94B810025E8D8880053BC1D /* ViewController.swift */,
-				A94B810225E8D8880053BC1D /* Main.storyboard */,
+				A94B813225E8D8C70053BC1D /* Model */,
+				A94B813325E8D8D10053BC1D /* View */,
+				A94B813425E8D8E40053BC1D /* ViewModel */,
+				A94B813525E8D8F00053BC1D /* Controller */,
 				A94B810525E8D88A0053BC1D /* Assets.xcassets */,
-				A94B810725E8D88A0053BC1D /* LaunchScreen.storyboard */,
-				A94B810A25E8D88A0053BC1D /* Info.plist */,
 			);
 			path = Own_Sites;
 			sourceTree = "<group>";
@@ -126,6 +125,47 @@
 				A94B812025E8D88B0053BC1D /* Info.plist */,
 			);
 			path = Own_SitesUITests;
+			sourceTree = "<group>";
+		};
+		A94B813225E8D8C70053BC1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A94B813325E8D8D10053BC1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A94B810225E8D8880053BC1D /* Main.storyboard */,
+				A94B810725E8D88A0053BC1D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A94B813425E8D8E40053BC1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A94B813525E8D8F00053BC1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A94B810025E8D8880053BC1D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A94B813625E8DA3C0053BC1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94B810A25E8D88A0053BC1D /* Info.plist */,
+				A94B80FC25E8D8880053BC1D /* AppDelegate.swift */,
+				A94B80FE25E8D8880053BC1D /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,7 +477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Own_Sites/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Own_Sites/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
